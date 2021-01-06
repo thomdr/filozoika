@@ -1,0 +1,61 @@
+// Basic classes
+.warning {
+  color: $red;
+}
+.success {
+  color: $green;
+}
+.notice {
+  color: $blue;
+}
+.container {
+	max-width: $max-page-width;
+	padding: 30px;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+}
+input, a {
+  &.button-blue, &.button-red, &.button-green {
+    line-height: 22px;
+  }
+}
+.go-back {
+  margin-bottom: 22px;
+}
+.hidden {
+  display: none;
+}
+@keyframes alert {
+  70% {
+    opacity: initial
+  }
+  80% {
+    opacity: 75%
+  }
+  90% {
+    opacity: 50%
+  }
+  100% {
+    opacity: 0%
+  }
+}
+.alert {
+  z-index: 9001;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  right: 0;
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  animation: 3s linear alert;
+  p {
+    margin: 0;
+  }
+}
+.users {
+	.data-table {
+		margin-bottom: 0;
+	}
+}

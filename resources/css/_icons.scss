@@ -1,0 +1,33 @@
+.icon {
+	background-image: url('xsicons.png');
+	width: 30px;
+	height: 30px;
+	display: block;
+	&.inactive {
+		opacity: 0.2;
+	}
+}
+.icon-food {
+	background-position: 0 0;
+}
+.icon-dung {
+	background-position: -30px 0;
+}
+.icon-trash {
+	background-position: -60px 0;
+}
+.icon-drop {
+	background-position: -90px 0;
+}
+.icon-pencil {
+	background-position: 0 -30px;
+}
+.icon-expand {
+	background-position: -30px -30px;
+}
+.icon-edit {
+	background-position: -60px -30px;
+}
+.icon-check {
+	background-position: -90px -30px;
+}

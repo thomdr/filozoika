@@ -1,0 +1,27 @@
+.nav-wrapper {
+  background-color: #343a40;
+  width: 100%;
+  nav {
+    max-width: $max-page-width;
+    width: 100%;
+    margin: 0 auto;
+    // Remove rules with //! for closer grouped buttons //
+    ul {
+      width: 100%; //!
+      li {
+        width: 100%; //!
+        text-align: center; //!
+        a {
+          color: $light-gray;
+          padding: 8px 0;
+          &.active {
+            color: $white;
+          }
+        }
+      }
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+}

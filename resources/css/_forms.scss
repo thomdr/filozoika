@@ -1,0 +1,213 @@
+.search-form {
+	margin: 22px auto 0 auto;
+	margin-left: -5px;
+	input, select, button {
+		margin: 5px;
+	}
+	> div, > div  + div {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+}
+.search-form, .regular-form {
+	input[type="checkbox"], .radios div input {
+		width: 38px;
+		height: 38px;
+		vertical-align: middle;
+	}
+	.checkbox, .radios div {
+		max-width: 300px;
+		display: inline-block;
+		input {
+			margin: 5px !important;
+		}
+		label, input {
+			display: inline-block;
+		}
+		label {
+			width: 178px !important;
+			height: 38px;
+			margin: 5px 50px 5px 10px !important;
+			box-sizing: border-box;
+			vertical-align: top !important;
+			line-height: 38px;
+			font-weight: normal !important;
+			padding: 0 !important;
+		}
+	}
+}
+.regular-form {
+	margin: 0 auto;
+	width: 100%;
+	.buttons {
+        margin-bottom: 10px;
+    }
+	.backgrounds {
+		.input-container:nth-of-type(odd) {
+			background-color: #f7f7f7;
+			border-radius: 7px;
+		}
+	}
+	h2:not(:first-of-type) {
+		margin-top: 40px;
+	}
+	.checkboxes {
+		display: block;
+		.checkbox {
+			margin-bottom: 10px;
+			input {
+				margin: 5px 5px 5px 10px !important
+			}
+		}
+	}
+	button.btn.btn-danger {
+		// display: inline-block;
+		margin-top: 4px;
+		margin-right: 4px;
+		margin-left: 15px;
+		height: 38px;
+		line-height: 0;	
+	}
+	button.btn.btn-primary, button.btn.btn-dark {
+		margin-bottom: 10px;
+	}
+	.input-container {
+		position: relative;
+		textarea {
+			min-height: 180px;
+			max-width: 650px;
+			width: 100%;
+		}
+		input, select {
+			margin-top: 4px;
+			max-width: 500px;
+		}
+		label:not(.radio) {
+			vertical-align: top;
+			width: 250px;
+			margin: 0;
+			font-weight: bold;
+			&.file {
+				margin-top: 4px;
+				padding: 5px;
+				font-weight: normal;
+				+ input[type="file"] {
+					display: none;
+				}
+			}
+			span {
+				color: $red;
+				font-size: 11px;
+				vertical-align: text-bottom;
+			}
+		}
+		label, input, textarea {
+			padding: 10px;
+		}
+		input, textarea {
+			margin-top: 4px;
+			display: inline-block;
+		}
+		input {
+			&[type="number"], &[type="date"] {
+				max-width: 250px;
+			}
+			&.custom-select {
+				background: none;
+				background-color: #fff;
+			}
+		}
+		p {
+			margin: 0;
+			padding: 0 0 10px 250px;
+		}
+		.radio {
+			margin: 0 0 0 250px;
+			display: block;
+			input {
+				margin-right: 8px;
+			}
+			&:nth-child(2) {
+				margin: 0;
+				display: inline-block;
+			}
+			&:last-child {
+				margin: 0 0 0 250px;
+			}
+		}
+		.radios {
+			span {
+				margin: 5px 5px 5px 23px;
+				display: block;
+				&:first-of-type, &:nth-of-type(2) {
+					margin: 0 0 0 23px;
+					line-height: 22px;
+				}
+			}
+			div {
+				margin: 0 20px 15px 0;
+				border-bottom: 2px solid rgba(0,0,0,0.03);
+				input {
+					margin: 5px 5px 5px 10px !important
+				}
+			}
+		}
+	}
+	.input-animals {
+		span {
+			padding: 0 15px;
+			line-height: 44px;
+		}
+		input:first-of-type, .cages {
+			width: 250px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		input[type="number"] {
+			max-width: 63px;
+		}
+		.cages {
+			margin-top: 4px;
+			margin-left: 15px;
+			width: 250px;
+		}
+		.flex {
+			width: 940px - 250px;
+			display: inline-flex;
+			flex-direction: row;
+			justify-content: space-between;
+			div {
+				display: inline-flex;
+				flex-direction: row;
+			}
+		}
+		.flex + .checkboxes {
+			float: right;
+			width: 940px - 250px;
+			display: inline-flex;
+			flex-direction: row;
+			input {
+				width: 38px;
+				margin: 5px 5px 5px 0 !important;
+			}
+			label {
+				width: auto !important;
+			}
+		}
+	}
+	.preview-img {
+        border-radius: 7px;
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05);
+		display: block;
+		margin: 4px 0 4px 250px;
+		max-width: 250px;
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.btn {
+		margin-top: 10px;
+		margin-right: 7px;
+	}
+}

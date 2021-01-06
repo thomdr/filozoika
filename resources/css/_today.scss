@@ -1,0 +1,183 @@
+
+$future: rgb(139, 243, 70);
+$almost: rgb(255, 182, 48);
+$now: rgb(76, 189, 255);
+$today: rgb(255, 129, 217);
+
+.future th {
+	box-shadow: 0 -5px 0 $future
+}
+.ends th {
+	box-shadow: 0 -5px 0 $almost
+}
+.now th {
+	box-shadow: 0 -5px 0 $now
+}
+.starts th {
+	box-shadow: 0 -5px 0 $today
+}
+.today-stays {
+	display: flex;
+	flex-direction: column;
+	.stay {
+		.dates {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: row;
+			span {
+				display: block;
+				color: #999;
+				font-size: 0.9em;
+				line-height: 16px;
+			}
+			p {
+				margin-right: 35px;
+				margin-bottom: 10px;
+			}
+			a, button {
+				margin-right: 10px;
+				margin-bottom: 10px;
+				height: 38px;
+			}
+		}
+		.data-table {
+			max-width: 1200px;
+			width: 100%;
+			margin-bottom: 50px;
+			td {
+				vertical-align: top;
+			}
+			tr:first-of-type {
+				th:nth-of-type(1), th:nth-of-type(2), th:nth-of-type(3) {
+					width: 170px;
+				}
+				th:nth-of-type(4), th:nth-of-type(5) {
+					width: 130px;
+				}
+			}
+			th {
+				padding: 3px 10px;
+			}
+			thead, .future, .past, .almost, .now {
+				background-color: transparent;
+			}
+			.information {
+				th {
+					padding: 7px 10px;
+					vertical-align: top;
+				}
+				td {
+					width: 666px;
+				}
+			}
+			.statuses {
+				padding: 0 10px;
+				width: 350px;
+				.status {
+					flex-wrap: wrap;
+					display: flex;
+					flex-direction: row;
+					width: 350px;
+					span {
+						font-family: Monaco, monospace;
+						line-height: 40px;
+						margin-right: 10px;
+						width: 80px;
+					}
+					i {
+						margin: 5px 3px;
+					}
+					.icon-drop {
+						margin-right: 20px;
+					}
+					.icon {
+						cursor: pointer;
+					}
+					.icon-edit, .edit, .icon-check, .icon-trash, .icon-pencil {
+						transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+					}
+					.icon-edit, .icon-check, .icon-pencil, .icon-food, .icon-dung, .icon-drop {
+						filter: invert(33%) sepia(47%) saturate(5333%) hue-rotate(200deg) brightness(103%) contrast(105%);
+						&:hover {
+							filter: invert(33%) sepia(78%) saturate(7322%) hue-rotate(201deg) brightness(99%) contrast(101%);
+						}
+					}
+					.icon-trash {
+						filter: invert(36%) sepia(31%) saturate(4614%) hue-rotate(332deg) brightness(86%) contrast(101%);
+						&:hover {
+							filter: invert(23%) sepia(45%) saturate(4497%) hue-rotate(338deg) brightness(83%) contrast(96%);
+						}
+					}
+					&.create .icon {
+						filter: invert(48%) sepia(21%) saturate(1373%) hue-rotate(81deg) brightness(105%) contrast(101%);
+						&:hover {
+							filter: invert(37%) sepia(17%) saturate(2029%) hue-rotate(81deg) brightness(107%) contrast(84%);
+						}
+					}
+					div {
+						margin-bottom: 4px;
+					}
+					div, div textarea {
+						font-size: 0.9em;
+						line-height: 20px;
+						width: 275px;
+						box-sizing: border-box;
+					}
+					textarea {
+						padding: 4px;
+						min-height: 150px;
+					}
+				}
+			}
+		}
+	}
+}
+.day-picker {
+	margin-bottom: 30px;
+	input {
+		width: 180px;
+	}
+	div:first-of-type {
+		display: flex;
+		flex-direction: row;
+		button, input {
+			margin-right: 20px;
+		}
+	}
+	div:last-of-type {
+		display: flex;
+		flex-direction: row;
+		margin-top: 20px;
+		span {
+			padding: 3px 10px;
+			border-radius: .25rem;
+			margin-right: 20px;
+			text-shadow: 0 0 6px rgba(#fff,0.7);
+			cursor: pointer;
+			transition: all 0.15s ease-in-out;
+			@mixin span($color) {
+				background-color: $color;
+				&.active {
+					box-shadow: 0 0 0 3px rgba($color,0.5);
+				}
+			}
+			&:nth-of-type(1) {
+				@include span($almost)
+			}
+			&:nth-of-type(2) {
+				@include span($today)
+			}
+			&:nth-of-type(3) {
+				@include span($now)
+			}
+			&:nth-of-type(4) {
+				@include span($future)
+			}
+			&.inactive {
+				filter: grayscale(50%);
+				text-shadow: none;
+			}
+		}
+	}
+}

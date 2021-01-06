@@ -1,0 +1,53 @@
+html {
+  overflow-y:scroll;
+}
+td, th, tr {
+	color: #2f2f2f;
+}
+h1, h2, h3, h4, h5, h6, p, li, span, a, strong, em,
+input, textarea, b, i, caption,
+figcaption, label, button, select, option {
+	color: #2f2f2f;
+  	word-wrap: break-word;
+  	word-break: break-word;   
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  a {
+    line-height: inherit;
+    color: inherit;
+  }
+}
+p, li, span, a, strong, em, input, textarea, b, i, th, td,
+caption, figcaption, label, button, select, option {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+input, textarea, select, option {
+  color: $black
+}
+a {
+  font-size: inherit;
+  text-decoration: none;
+  color: $blue;
+}
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 8px;
+  max-width: $max-page-width;
+  margin: 0 auto;
+  padding: 15px 30px 0 30px;
+}
+strong, b {
+  font-weight: bold;
+}
+em, i {
+  font-style: italic;
+}

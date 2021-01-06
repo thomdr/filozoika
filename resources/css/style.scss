@@ -1,0 +1,17 @@
+$white: #efefef;
+$light-gray: #aaa;
+$dark-gray: #343a40;
+$black: #2f2f2f;
+$green: #36c060;
+$light-green: #5ef58c;
+$blue: #007bff;
+$light-blue: #80b3ff;
+$red: #ec3e3e;
+$light-red: #ff7575;
+$max-page-width: 1200px;
+
+@import 'elements', 'classes', 'nav', 'tables', 'forms', 'querries', 'icons', 'today';
+
+#container {
+	width: 100%;
+}

@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1100px) {
+  .data-table {
+    .buttons {
+      margin: auto 0 0 0;
+      button.btn-outline-danger {
+        margin-top: 0;
+        margin-left: 7px;
+      }
+    }
+    thead {
+      display: none;
+    }
+    tbody {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    tr {
+      max-width: 300px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      &:nth-of-type(even) {
+        background-color: #f7f7f7;
+        border-radius: 7px;
+      }
+      td, th {
+        width: 300px !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .container {
+    padding: 8px;
+  }
+}
