@@ -16,6 +16,10 @@ Requires Node.js & Composer
 
 `php artisan storage:link`
 
+4. Import filozoika_portal.sql into a database.
+
+5. Configure the `.env` as needed.
+
 ## How to start up
 
 Open 2 cmd terminals and run:
