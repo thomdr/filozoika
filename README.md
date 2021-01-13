@@ -27,3 +27,9 @@ Open 2 cmd terminals and run:
 `npm run watch`
 
 `php artisan serve`
+
+## Additional information
+
+This is a Laravel + React project.
+
+The default url is `http://localhost:8000/`, this can be changed in `resources/js/config.json`.
